@@ -5,7 +5,6 @@ This project applies a linear regression model to predict individual medical ins
 
 The analysis prioritizes clarity, interpretability and business relevance over model complexity.
 
----
 
 ## Dataset
 The dataset contains 1,338 records with the following variables:
@@ -18,7 +17,6 @@ The dataset contains 1,338 records with the following variables:
 - **region** – residential region in the US  
 - **charges** – medical insurance cost (target variable)  
 
----
 
 ## Approach
 1. Conducted quick exploratory data analysis to understand distributions and relationships  
@@ -28,7 +26,6 @@ The dataset contains 1,338 records with the following variables:
 5. Evaluated performance using **MAE**, **RMSE**, and **R²**  
 6. Interpreted model coefficients to identify key cost drivers  
 
----
 
 ## Key Results
 
@@ -43,14 +40,12 @@ The dataset contains 1,338 records with the following variables:
 - Sex and region show minimal influence after controlling for other factors  
 - Higher prediction errors for high-cost individuals reflect the skewed nature of medical insurance charges  
 
----
 
 ## Limitations
 - Insurance charges are highly right-skewed, which inflates RMSE  
 - Linear regression assumes linear and additive relationships  
 - The model is intended for cost understanding rather than actuarial pricing or deployment  
 
----
 
 ## Conclusion
 A simple linear regression model explains a substantial portion of the variation in medical insurance costs while remaining highly interpretable. The results highlight smoking status as the dominant cost driver and demonstrate the trade-off between model simplicity and performance on extreme cases.
